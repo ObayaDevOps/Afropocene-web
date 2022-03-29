@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+@font-face {
+  font-family: "Charvet-Heavy";
+  src: local("Charvet-Heavy"),
+   url("./fonts/Charvet-Heavy.ttf") format("truetype");
+  font-weight: bold;
+}

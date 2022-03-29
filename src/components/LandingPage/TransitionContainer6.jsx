@@ -26,25 +26,28 @@ export default class TransitionContainer6 extends Component {
                         <Segment style={{ padding: "8em 0em" }} vertical>
                             <Container text>
                                 <Header as="h3" style={{ fontSize: "2em" }}>
-                                So What's The Meaning Of Our Logo ?
+                                So What's The Meaning Of Our Name ?
                                 </Header>
                                 <Image
                                     rounded
                                     fluid
-                                    src={require('../../assets/logos/gold-logo-TRANSPARENT.PNG')}
+                                    src={require('../../assets/logos/afropoceneMainLogo.png')}
                                     />
 
                                 <p style={{ fontSize: "1.33em" }}>
-                                This is the hieroglyphic for 'Beekeeper'.
-                                Beekeeping is an ancient art that has been practiced for thousands of years.
-                                There are even jars of edible honey buried with Ancient Egyptian Pharaohs.
+                                Anthropocene:
+                                adjective
+
+                                relating to or denoting the current geological age, 
+                                viewed as the period during which human activity has been the dominant influence on climate and the environment.
                                 </p>
                                 <p style={{ fontSize: "1.33em" }}>
-                                We thought that an icon that symbolised care for bees and ancient african wisdom was fitting.
-                                Bees are humanities greatest friends among the insects.
-                                </p>
+                                Afro-
+                                relating to Africa.
+
+                                "Afrocentric"                                </p>
                                 <Button as="a" size="large" href='https://medium.com/@humble-beeing' target='_blank'>
-                                Read More on our Blog !
+                                Read More on our Blog!
                                 </Button>
 
                                 <Divider

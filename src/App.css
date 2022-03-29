@@ -36,3 +36,21 @@
     transform: rotate(360deg);
   }
 } */
+
+.afro-font-xxlarge {
+  font-family: "Charvet-Heavy";
+  font-size: xx-large;
+  color: white;
+}
+
+.afro-font-large {
+  font-family: "Charvet-Heavy";
+  font-size: large;
+  color: white;
+}
+
+.afro-font-black{
+  font-family: "Charvet-Heavy";
+  font-size: large;
+  color: black;
+}

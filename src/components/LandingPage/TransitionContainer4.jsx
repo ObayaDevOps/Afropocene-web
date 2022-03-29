@@ -3,6 +3,7 @@ import { Container, Transition, Header, Visibility, Grid, Segment, Divider, Resp
 import  {HomepageHeading }from '../HomeForest';
 import TeamAboutCards from '../LandingPage/TeamAboutCards';
 
+
 export default class TransitionContainer4 extends Component {
     state = { visible: false }
 
@@ -30,7 +31,7 @@ export default class TransitionContainer4 extends Component {
                                             as="h3" 
                                             style={{ 
                                                 fontSize: window.screen.width <= Responsive.onlyMobile.maxWidth ? "4.5em" : "7.7em" , 
-                                                color: "#bf9000" }}>
+                                                color: "#000000" }}>
                                             Meet the Team
                                         </Header>
                                         <Divider hidden />

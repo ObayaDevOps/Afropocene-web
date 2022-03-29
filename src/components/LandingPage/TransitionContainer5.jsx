@@ -27,16 +27,16 @@ export default class TransitionContainer5 extends Component {
                             <Grid celled="internally" columns="equal" stackable>
                                 <Grid.Row textAlign="center">
                                 <Grid.Column style={{ paddingBottom: "5em", paddingTop: "5em" }}>
-                                    <Header as="h2" style={{ fontSize: "2em", color: "#bf9000" }}>
-                                    Would You Like To Buy Some Great Honey ? 
+                                    <Header as="h2" style={{ fontSize: "2em", color: "#000000" }}>
+                                    Would You Like To Visit the Studio/Lab Space ? 
                                     </Header>
-                                    <p style={{ fontSize: "1.33em", color: "#bf9000" }}>
-                                        We are based in Kabalagala! Visit us and sample our range of honeys
+                                    <p style={{ fontSize: "1.75em", color: "#000000" }}>
+                                        We are based in Kampala, Uganda! 
                                     </p>
-                                    <p style={{ fontSize: "1.33em", color: "#bf9000" }}>
-                                        2nd Floor, 'Tools and Machinery' building.
+                                    <p style={{ fontSize: "1.75em", color: "#000000" }}>
+                                        2nd and 3rd Floor, 'Tools and Machinery' building in Kabalagala
                                     </p>
-                                    <p style={{ fontSize: "1.33em", color: "#bf9000" }}>
+                                    <p style={{ fontSize: "1.75em", color: "#000000" }}>
                                         <MapEmbedContainer></MapEmbedContainer>
                                     </p>
                                 </Grid.Column>

@@ -76,7 +76,7 @@ const PageContent = () => (
                             <Image
                                 rounded
                                 fluid
-                                src={require('../../assets/teamPhotos/ObayaPFP.jpg')}
+                                src={require('../../assets/teamPhotos/ObiPFP.png')}
                                 style = {{
                                     paddingBottom : window.screen.width <= Responsive.onlyMobile.maxWidth ? "3em" : "0em"
                                 }}

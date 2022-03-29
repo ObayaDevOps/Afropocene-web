@@ -9,51 +9,51 @@ class TeamAboutCards extends Component {
         <Container fluid>
             <Card.Group stackable itemsPerRow={5}>
               <Card>
-              <Image src={require('../../assets/teamPhotos/ObayaPFP.jpg')} wrapped ui={false} />
+              <Image src={require('../../assets/teamPhotos/ObiPFP.png')} wrapped ui={false} />
                 <Card.Content>
                   <Card.Header>Obaya</Card.Header>
                   <Card.Meta>
-                  <span className='date'>Co-Founder, Beekeeper</span>
+                  <span className='date'>Tech + Generative</span>
                   </Card.Meta>
                 </Card.Content>
               </Card>
 
               <Card>
-              <Image src={require('../../assets/teamPhotos/AnguyoPFP.jpg')} wrapped ui={false} />
+              <Image src={require('../../assets/teamPhotos/MartinPFP2.png')} wrapped ui={false} />
                 <Card.Content>
-                  <Card.Header>Anguyo</Card.Header>
+                  <Card.Header>Kharumwa</Card.Header>
                   <Card.Meta>
-                  <span className='date'>Co-Founder</span>
+                  <span className='date'>Photography</span>
                   </Card.Meta>
                 </Card.Content>
               </Card>
               
               <Card>
-              <Image src={require('../../assets/teamPhotos/AnguyoPFP.jpg')} wrapped ui={false} />
+              <Image src={require('../../assets/teamPhotos/LetaruPFP.png')} wrapped ui={false} />
                 <Card.Content>
                   <Card.Header>Letaru</Card.Header>
                   <Card.Meta>
-                  <span className='date'>Business Development Lead</span>
+                  <span className='date'>Mixed Media</span>
                   </Card.Meta>
                 </Card.Content>
               </Card>
 
               <Card>
-                <Image src={require('../../assets/teamPhotos/AmosPFP.jpg')} wrapped ui={false} />
+                <Image src={require('../../assets/teamPhotos/OdurPFP.png')} wrapped ui={false} />
                 <Card.Content>
-                  <Card.Header>Amos</Card.Header>
+                  <Card.Header>Odur</Card.Header>
                   <Card.Meta>
-                  <span className='date'>Beekeeping Expert</span>
+                  <span className='date'>Metal and Oil Paint</span>
                   </Card.Meta>
                 </Card.Content>
               </Card>
 
               <Card>
-              <Image src={require('../../assets/teamPhotos/JosephinePFP.jpg')} wrapped ui={false} />
+              <Image src={require('../../assets/teamPhotos/MonaPFP.png')} wrapped ui={false} />
                 <Card.Content>
-                  <Card.Header>Josephine</Card.Header>
+                  <Card.Header>Mona</Card.Header>
                   <Card.Meta>
-                  <span className='date'>Administrator, Forestry Expert</span>
+                  <span className='date'>Charcoal</span>
                   </Card.Meta>
                 </Card.Content>
               </Card>

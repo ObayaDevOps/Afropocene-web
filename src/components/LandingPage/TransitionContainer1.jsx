@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Container, Transition, Header, Visibility, Grid, Image, Responsive } from "semantic-ui-react";
 import  {HomepageHeading }from '../HomeForest';
+import AfricanFontComponent from "./AfricanFontComponent";
+import TypeWriterEffect from 'react-typewriter-effect';
+
 
 export default class TransitionContainer1 extends Component {
     constructor(props) {
@@ -29,8 +32,8 @@ export default class TransitionContainer1 extends Component {
                 <Visibility
                     once={false}
                     onTopVisible={this.toggleVisibility}>
-                    <Transition visible={visible} animation='fade down' duration={2500}>
-                        <Grid container stackable verticalAlign="middle" style={{ minHeight: '100vh' }} >
+                    <Transition visible={visible} animation='fade down' duration={3000}>
+                        <Grid container stackable verticalAlign="middle" style={{ minHeight: '110vh' }} >
                             <Grid.Row centered textAlign="center">
                                 <Header 
                                     as="h1" 
@@ -39,22 +42,30 @@ export default class TransitionContainer1 extends Component {
                                         fontSize: window.screen.width <= Responsive.onlyMobile.maxWidth ? "4.5em" : "7.7em" , 
                                         paddingTop: window.screen.width <= Responsive.onlyMobile.maxWidth ? "1em" : "0.7em", 
                                         paddingBottom: window.screen.width <= Responsive.onlyMobile.maxWidth ? "0.5em" : "0.7em", 
-                                        color: "#bf9000",
+                                        color: "#000000",
 
                                     }}>
-                                    What We Do
+
+                                    <TypeWriterEffect
+                                        textStyle={{ fontFamily: 'Helvetica', colour: '#FFFFFF',fontSize: window.screen.width <= Responsive.onlyMobile.maxWidth ? "4.5em" : "1.7em" }}
+                                        startDelay={150}
+                                        cursorColor="white"
+                                        text="What We Do."
+                                        typeSpeed={100}
+                                    />
                                 </Header>
                             </Grid.Row>
                                 <Grid.Column  mobile={16} tablet={16} computer={6} >
                                 <Container  >
-                                <Header as="h2"  style={{ fontSize: "3.1em", color: "#bf9000" }}>
-                                    We Improve Lives Through Beekeeping
+
+                                <Header as="h2"  style={{ fontSize: "5.1em", color: "#000000" }}>
+                                    We Write New African Narratives
                                     </Header>
                                     <p style={{ fontSize: "1.33em" }}>
-                                        Humble Beeing is a proudly Ugandan Social Enterprise specialising in Beekeeping. We offer free training and low-cost hive materials to farmers and communities in impoverished areas of Uganda. 
+                                    We are afrofuturists interested in exploring the cultural aesthetics, philosophies of science and history that are borne of the developing intersection of African/Africana diaspora culture with technology.                                     
                                     </p>
                                     <p style={{ fontSize: "1.33em" }}>
-                                        Our mission is to help individuals and households to become self-sustaining by selling fine Ugandan honey and other bee products they produce to local and international markets.
+                                        Our mission is to help ... to create ... to inspire
                                     </p>
                                     </Container>
                                 </Grid.Column>
@@ -62,7 +73,7 @@ export default class TransitionContainer1 extends Component {
                                     <Image
                                         rounded
                                         fluid
-                                        src={require('../../assets/otherImages/fruit-3247447_1920.jpg')}
+                                        src={require('../../assets/InsideAfropocene/afropocene-studio2.jpg')}
                                         style = {{
                                             paddingBottom : window.screen.width <= Responsive.onlyMobile.maxWidth ? "3em" : "0em"
                                         }}

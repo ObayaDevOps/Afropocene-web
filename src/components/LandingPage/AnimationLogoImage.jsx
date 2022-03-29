@@ -1,6 +1,8 @@
 import React from "react";
 import {  Image, Transition, Visibility, Segment, Container, Responsive, Header, Input, Button, Divider} from "semantic-ui-react";
 import PropTypes from "prop-types";
+import AfricanFontComponent from "./AfricanFontComponent";
+import TypeWriterEffect from 'react-typewriter-effect';
 
 
 
@@ -31,56 +33,29 @@ export default class AnimationLogoImage extends React.Component {
             textAlign="center"
             style={{ 
                 minHeight: '100vh', 
-                padding: window.screen.width <= Responsive.onlyMobile.maxWidth ? "0em": "3em" }}
+                padding: window.screen.width <= Responsive.onlyMobile.maxWidth ? "0em": "30em" }}
             vertical
           >
-            <Visibility
-                once={false}
-                // onPassing={this.toggleVisibility}
-            >
-                <Transition visible={visible} unmountOnHide={true} animation='fly up' duration={1200} transitionOnMount={false}>
-                    <Image 
-                        size='huge'
-                        centered='true'
-                        style={{ paddingTop: window.screen.width <= Responsive.onlyMobile.maxWidth ? "7em" : "0em" }} 
-                        src={require('../../assets/logos/Logo-with-words-TRANSPARENT.PNG')} 
-                    />
-                </Transition>
+              <AfricanFontComponent text="AFROPOCENE." classNameSize="afro-font-xxlarge" />
+              <Divider hidden />
+              <Divider hidden />
+              <Divider hidden />
+              <Divider hidden />
 
-                <Transition visible={visible}  unmountOnHide={false} animation='fly up' duration={1200} transitionOnMount={true}>
-                    <Container>
-                        <Image 
-                            size='medium'
-                            centered='true' 
-                            src={require('../../assets/logos/logo-tagline-trans.PNG')} 
-                            style={{ padding: "1em 0em" }} 
+              <TypeWriterEffect
+                    textStyle={{ fontFamily: 'Helvetica', colour: '#FFFFFF' }}
+                    startDelay={600}
+                    cursorColor="white"
+                    multiText={[
+                      'Welcome to the Future of African Creativity...',
+                      'A group of thinkers, creators and doers formed a team to explore Art in all forms  ...',
+                      'From the Physical... To the Digital.',
+                      'Linked by a shared passion to: Innovate.Create.Educate',
+                    ]}
+                    typeSpeed={65}
+            />
 
-                        />
-                        <Input size="big" icon="mail" inverted placeholder='Email ...' />
-                        <Divider hidden />
-                        <Button>Sign Up for Honey Drops !</Button>
-                    </Container>
-                </Transition>
-
-                <Transition visible={visible}  unmountOnHide={false} animation='fly up' duration={1250} transitionOnMount={true}>
-                    <Container>
-                    {/* <Image 
-                            size='small'
-                            centered='true' 
-                            style={{ paddingBottom: "1.5em" }} 
-
-                            src={require('../assets/icons/scroll-down-TRANS.PNG')} 
-                        /> */}
-                    <Image 
-                            size='mini'
-                            centered='true' 
-                            hidden={window.screen.width <= Responsive.onlyTablet.maxWidth}
-                            src={require('../../assets/icons/small-arrow-Trans.PNG')} 
-                        />
-                    </Container>
-                </Transition>
-                </Visibility>
-                </Segment>
+            </Segment>
 
 
         );

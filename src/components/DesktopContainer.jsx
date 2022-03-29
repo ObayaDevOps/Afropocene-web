@@ -29,8 +29,10 @@ import ContactDropdownContainer from "./LandingPage/ContactDropdownContainer";
 import GalleryComponent from './Gallery/GalleryComponent';
 import AboutUsPageComponent from './Pages/AboutUsPageComponent';
 import RoadmapPageComponent from './Pages/RoadmapPageComponent';
-import WorldOfBeesPageComponent from './Pages/WorldOfBeesPageComponent';
-import RawHoneyPageComponent from './Pages/RawHoneyPageComponent';
+import CryptoPageComponent from "./Pages/CryptoPageComponent";
+import CalendarPageComponent from "./Pages/CalendarPageComponent";
+import PressPageComponent from "./Pages/PressPageComponent";
+import AfricanFontComponent from "./LandingPage/AfricanFontComponent";
 
 
 /* Heads up!
@@ -99,6 +101,7 @@ export default class DesktopContainer extends Component {
   render() {
     const { fixed } = this.state;
     const { activeItem } = this.state;
+    const myRef = document.querySelector('scrollable-div');
 
 
     return (
@@ -110,27 +113,30 @@ export default class DesktopContainer extends Component {
                 borderless
                 color='black'
               >
-                  <Image                                    
+                  {/* <Image                                    
                     size='small'
                     to="/"
                     as={Link}
                     // hidden={!this.state.fixed}
                     src={require('../assets/logos/gold-logo-TRANSPARENT.PNG')}
-                  />
+                  /> */}
+                  <AfricanFontComponent text="AFR.PCN" classNameSize="afro-font-large" />
+
+
                   <Menu.Item
                     name='home'
                     onClick={this.handleItemClick}
                     position="right"
                     to="/"
                     as={Link}
-                    style={{ color:"#bf9000" }} 
+                    style={{ color: "#FFFFFFF" }} 
                     active={activeItem === 'home'}>
                       Home
                   </Menu.Item>
 
                   <Menu.Item
                     to="/about_us"
-                    style={{ color:"#bf9000" }} 
+                    style={{ color: "#FFFFFFF" }} 
                     as={Link}
 
                     onClick={this.handleItemClick}
@@ -142,7 +148,7 @@ export default class DesktopContainer extends Component {
 
                   <Menu.Item
                     to="/roadmap"
-                    style={{ color:"#bf9000" }} 
+                    style={{ color: "#FFFFFFF" }} 
                     as={Link}
                     onClick={this.handleItemClick}
                     name='roadmap'  
@@ -150,35 +156,10 @@ export default class DesktopContainer extends Component {
                     >
                       Roadmap                    
                   </Menu.Item>  
-                  
-
-                  <Menu.Item
-                    to="/world_of_bees"
-                    style={{ color:"#bf9000" }} 
-                    as={Link}
-
-                    onClick={this.handleItemClick}
-                    name='world_of_bees'  
-                    active={activeItem === 'world_of_bees'}
-                    >
-                      World of Bees                    
-                  </Menu.Item>   
-
-                  <Menu.Item
-                    to="/raw_honey"
-                    style={{ color:"#bf9000" }} 
-                    as={Link}
-
-                    onClick={this.handleItemClick}
-                    name='raw_honey'  
-                    active={activeItem === 'raw_honey'}
-                    >
-                      Raw Honey                    
-                  </Menu.Item>  
-
+                
                   <Menu.Item
                     to="/gallery"
-                    style={{ color:"#bf9000" }} 
+                    style={{ color: "#FFFFFFF" }} 
                     as={Link}
 
                     onClick={this.handleItemClick}
@@ -186,19 +167,51 @@ export default class DesktopContainer extends Component {
                     active={activeItem === 'gallery'}
                     >
                       Gallery                    
-                  </Menu.Item>                                    
+                  </Menu.Item>
+
+                  <Menu.Item
+                    to="/crypto"
+                    style={{ color: "#FFFFFFF" }} 
+                    as={Link}
+
+                    onClick={this.handleItemClick}
+                    name='Crypto'  
+                    active={activeItem === 'crypto'}
+                    >
+                      Crypto                    
+                  </Menu.Item> 
+
+                  <Menu.Item
+                    to="/calendar"
+                    style={{ color: "#FFFFFFF" }} 
+                    as={Link}
+                    onClick={this.handleItemClick}
+                    name='shop' 
+                    active={activeItem === 'calendar'}>
+                      Calendar
+                  </Menu.Item>                                      
 
                   <Menu.Item
                     href='https://medium.com/@humble-beeing' target='_blank'
-                    style={{ color:"#bf9000" }} 
+                    style={{ color: "#FFFFFFF" }} 
                     name='blog' 
                     active={activeItem === 'blog'}>
                       Blog
                   </Menu.Item>
 
                   <Menu.Item
+                    to="/press"
+                    style={{ color: "#FFFFFFF" }} 
+                    as={Link}
+                    onClick={this.handleItemClick}
+                    name='press' 
+                    active={activeItem === 'press'}>
+                      Press
+                  </Menu.Item>
+
+                  <Menu.Item
                     to="/shop"
-                    style={{ color:"#bf9000" }} 
+                    style={{ color: "#FFFFFFF" }} 
                     as={Link}
                     onClick={this.handleItemClick}
                     name='shop' 
@@ -208,7 +221,7 @@ export default class DesktopContainer extends Component {
 
                   <Menu.Item
                     to="/contact"
-                    style={{ color:"#bf9000" }} 
+                    style={{ color: "#FFFFFFF" }} 
                     as={Link}
                     onClick={this.handleItemClick}
                     name='shop' 
@@ -239,8 +252,10 @@ export default class DesktopContainer extends Component {
               <Route exact path="/gallery" component={GalleryComponent} />
               <Route exact path="/about_us" component={AboutUsPageComponent} />
               <Route exact path="/roadmap" component={RoadmapPageComponent} />
-              <Route exact path="/raw_honey" component={RawHoneyPageComponent} />
-              <Route exact path="/world_of_bees" component={WorldOfBeesPageComponent} />
+              <Route exact path="/crypto" component={CryptoPageComponent} />
+              <Route exact path="/calendar" component={CalendarPageComponent} />
+              <Route exact path="/press" component={PressPageComponent} />
+
              </Switch>
 
              </BrowserRouter>

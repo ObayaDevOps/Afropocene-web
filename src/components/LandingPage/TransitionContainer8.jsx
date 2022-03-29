@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Container, Transition, Image, Visibility, Grid, Header, Divider, Segment, Responsive } from "semantic-ui-react";
 import  {HomepageHeading }from '../HomeForest';
 import About from '../LandingPage/TeamAboutCards';
+import TypeWriterEffect from 'react-typewriter-effect';
+
 
 export default class TransitionContainer8 extends Component {
     state = { visible: false }
@@ -24,7 +26,7 @@ export default class TransitionContainer8 extends Component {
             <Segment 
                 fluid 
                 style={{ 
-                    backgroundImage: `url(${require('../../assets/slider/heidi-erickson-2Q9zeNBoxA8-unsplash.jpg')})`, 
+                    backgroundImage: `url(${require('../../assets/InsideAfropocene/odurInstallation.jpg')})`, 
                     backgroundSize: 'cover', 
                     minHeight: '100vh' }}>
                         <Grid  columns="equal" stackable  verticalAlign="middle"  >
@@ -38,7 +40,16 @@ export default class TransitionContainer8 extends Component {
                                         paddingTop:"0.3em", 
                                         paddingBottom:"0em" }}
                                 >
-                                    <b>Our Jouney So Far</b>
+                                    {/* <b>Our Jouney So Far</b> */}
+                                    <TypeWriterEffect
+                                        textStyle={{ fontFamily: 'Helvetica', colour: '#FFFFFF',fontSize: window.screen.width <= Responsive.onlyMobile.maxWidth ? "4.5em" : "0.7em" }}
+                                        startDelay={200}
+                                        cursorColor="white"
+                                        text="Our Jouney So Far"
+                                        typeSpeed={50}
+                                    />
+
+
                                 </Header>
                             </Grid.Row>
                             <Grid.Column textAlign="center" width={6} style={{ padding: "5em" }}>
@@ -47,20 +58,20 @@ export default class TransitionContainer8 extends Component {
                                         size='medium'
                                         centered
                                         hidden={ window.screen.width <= Responsive.onlyMobile.maxWidth }
-                                        src={require('../../assets/icons/bee.png')}
+                                        src={require('../../assets/icons/visitors.png')}
                                     /> 
                                     <Image
                                         rounded
                                         size='small'
                                         centered
                                         hidden={ window.screen.width > Responsive.onlyMobile.maxWidth }
-                                        src={require('../../assets/icons/bee.png')}
+                                        src={require('../../assets/icons/visitors.png')}
                                     /> 
                                         <p style={{ 
                                             fontSize: window.screen.width <= Responsive.onlyMobile.maxWidth ? "3em" : "4.5em" , 
                                             textAlign:'center', 
                                             color: "white" }}>
-                                            <b>{207 * 50000} Bees</b>
+                                            <b>3 Exhibitions</b>
                                         </p>                                         
                                     </Grid.Column>
                                 <Grid.Column textAlign="center" width={5} style={{ padding: "5em" }}>
@@ -69,7 +80,7 @@ export default class TransitionContainer8 extends Component {
                                             size='medium'
                                             centered
                                             hidden={ window.screen.width <= Responsive.onlyMobile.maxWidth }
-                                            src={require('../../assets/icons/hive.png')}
+                                            src={require('../../assets/icons/network.png')}
                                             // src={require('../assets/bees-345628_1920.jpg')}
                                         />  
                                         <Image
@@ -77,13 +88,13 @@ export default class TransitionContainer8 extends Component {
                                             size='small'
                                             centered
                                             hidden={ window.screen.width > Responsive.onlyMobile.maxWidth }
-                                            src={require('../../assets/icons/hive.png')}
+                                            src={require('../../assets/icons/network.png')}
                                             // src={require('../assets/bees-345628_1920.jpg')}
                                         />                                       
                                             <p style={{ 
                                                 fontSize: window.screen.width <= Responsive.onlyMobile.maxWidth ? "3em" : "4.5em" ,  
                                                 color: "white" }}>
-                                            <b>207 Bee Hives</b>
+                                            <b>5 Resident Artists</b>
                                         </p>
                                            
                                     </Grid.Column>
@@ -94,7 +105,7 @@ export default class TransitionContainer8 extends Component {
                                         centered
                                         hidden={ window.screen.width <= Responsive.onlyMobile.maxWidth }
 
-                                        src={require('../../assets/icons/network.png')}
+                                        src={require('../../assets/icons/musical-notes.png')}
                                         // src={require('../assets/bees-345628_1920.jpg')}
                                     />
                                      <Image
@@ -102,13 +113,13 @@ export default class TransitionContainer8 extends Component {
                                             size='small'
                                             centered
                                             hidden={ window.screen.width > Responsive.onlyMobile.maxWidth }
-                                            src={require('../../assets/icons/network.png')}
+                                            src={require('../../assets/icons/musical-notes.png')}
                                             // src={require('../assets/bees-345628_1920.jpg')}
                                     />  
                                         <p style={{ 
                                             fontSize: window.screen.width <= Responsive.onlyMobile.maxWidth ? "3em" : "4.5em" , 
                                             color: "white" }}>
-                                            <b>3 Apiary Locations</b>
+                                            <b>1 Live Music Show</b>
                                         </p>
                                         
                                     </Grid.Column>  

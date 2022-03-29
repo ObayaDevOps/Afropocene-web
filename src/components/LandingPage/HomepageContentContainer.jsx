@@ -38,7 +38,6 @@ export const HomepageContentContainer = () =>  {
         < Divider />
         <TransitionContainer5 />
         < Divider />
-        <TransitionContainer6 />
         <FooterContainer />
     </div>
    ); 

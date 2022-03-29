@@ -33,8 +33,8 @@ export default class TransitionContainer1 extends Component {
                                 <Grid.Column width={3}>
                                 <Header inverted as="h4" content="Services" />
                                 <List link inverted>
-                                    <List.Item as="a">Honey Pre-Order</List.Item>
-                                    <List.Item as="a">Apiary Set-Up</List.Item>
+                                    <List.Item as="a">Hire our Space</List.Item>
+                                    <List.Item as="a">Sumbit Art</List.Item>
                                 </List>
                                 </Grid.Column>
                                 <Grid.Column width={7}>
@@ -42,7 +42,7 @@ export default class TransitionContainer1 extends Component {
                                     Get Involved !
                                 </Header>
                                 <p>
-                                    Help us build a better Uganda
+                                    Reshaping Narratives. Building The Future.
                                 </p>
                                 </Grid.Column>
                             </Grid.Row>
